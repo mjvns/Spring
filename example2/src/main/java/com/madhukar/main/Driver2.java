@@ -7,6 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Driver2 {
     public static void main(String args[]){
+        System.out.println("Wiring beans using method call()");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         Vehicle vehicle = context.getBean(Vehicle.class);
         Person person = context.getBean(Person.class);
