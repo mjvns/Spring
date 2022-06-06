@@ -2,7 +2,7 @@ package com.madhukar.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("BoseSterio")
 public class BoseSterio implements Speaker{
     @Override
     public void startPlaying() {

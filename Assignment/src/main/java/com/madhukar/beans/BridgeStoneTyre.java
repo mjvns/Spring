@@ -2,7 +2,7 @@ package com.madhukar.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("BridgeStoneTyre")
 public class BridgeStoneTyre implements Tyre{
     @Override
     public void startRotating() {

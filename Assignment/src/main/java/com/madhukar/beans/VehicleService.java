@@ -10,7 +10,8 @@ public class VehicleService {
     private Speaker speaker;
     private Tyre tyre;
 
-    public VehicleService(Speaker speaker,Tyre tyre){
+    @Autowired
+    public VehicleService(@Qualifier("SonySterio") Speaker speaker,@Qualifier("MichelinTyre") Tyre tyre){
         System.out.println("Vehicle service initialized");
         this.speaker = speaker;
         this.tyre = tyre;
